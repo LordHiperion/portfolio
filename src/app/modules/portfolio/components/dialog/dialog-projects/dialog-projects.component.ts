@@ -1,6 +1,8 @@
 import { Component, Inject, OnInit, signal } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+
+// Interface
 import { IProjects } from '../../../interface/IProjects.interface';
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialog-projects',

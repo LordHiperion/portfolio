@@ -1,11 +1,14 @@
 import { Component, signal } from '@angular/core';
-import { IKnowledge } from '../../interface/IKnowledge.interface';
+//import { text } from 'stream/consumers';
 import { IExperience } from '../../interface/IExperience.interface';
+import { IKnowledge } from '../../interface/IKnowledge.interface';
+import { KnowledgeComponent } from '../knowledge/knowledge.component';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-experiences',
   standalone: true,
-  imports: [],
+  imports: [KnowledgeComponent,MatTooltip],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss'
 })
@@ -31,16 +34,6 @@ export class ExperiencesComponent {
       title: 'Bootstrap'
     },
     {
-      src: 'assets/icons/knowledge/javascript.svg',
-      alt: 'Ícone de conhecimento de JavaScript',
-      title: 'JavaScript'
-    },
-    {
-      src: 'assets/icons/knowledge/typescript.svg',
-      alt: 'Ícone de conhecimento em TypeScript',
-      title: 'TypeScript'
-    },
-    {
       src: 'assets/icons/knowledge/html5.svg',
       alt: 'Ícone de conhecimento de HTML5',
       title: 'HTML5'
@@ -49,6 +42,11 @@ export class ExperiencesComponent {
       src: 'assets/icons/knowledge/css3.svg',
       alt: 'Ícone de conhecimento de CSS3',
       title: 'CSS3'
+    },
+    {
+      src: 'assets/icons/knowledge/javascript.svg',
+      alt: 'Ícone de conhecimento de JavaScript',
+      title: 'JavaScript'
     },
     {
       src: 'assets/icons/knowledge/sass.svg',
@@ -63,5 +61,3 @@ export class ExperiencesComponent {
 
   ])
 }
-
-

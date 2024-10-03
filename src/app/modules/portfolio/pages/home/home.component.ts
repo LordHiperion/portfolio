@@ -9,7 +9,7 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, KnowledgeComponent,ExperiencesComponent,ProjectsComponent],
+  imports: [HeaderComponent, KnowledgeComponent, ExperiencesComponent, ProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

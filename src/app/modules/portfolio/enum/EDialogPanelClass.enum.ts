@@ -1,3 +1,3 @@
-export enum EDialogPanelClass{
+export enum EDialogPanelClass {
   PROJECTS = 'dialog-container-projects',
 }

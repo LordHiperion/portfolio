@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
-// Interface
 
+//Interface
 import { IKnowledge } from '../../interface/IKnowledge.interface';
 import { MatTooltip } from '@angular/material/tooltip';
 
@@ -24,16 +24,6 @@ export class KnowledgeComponent {
       title: 'Bootstrap'
     },
     {
-      src: 'assets/icons/knowledge/javascript.svg',
-      alt: 'Ícone de conhecimento de JavaScript',
-      title: 'JavaScript'
-    },
-    {
-      src: 'assets/icons/knowledge/typescript.svg',
-      alt: 'Ícone de conhecimento em TypeScript',
-      title: 'TypeScript'
-    },
-    {
       src: 'assets/icons/knowledge/html5.svg',
       alt: 'Ícone de conhecimento de HTML5',
       title: 'HTML5'
@@ -42,6 +32,11 @@ export class KnowledgeComponent {
       src: 'assets/icons/knowledge/css3.svg',
       alt: 'Ícone de conhecimento de CSS3',
       title: 'CSS3'
+    },
+    {
+      src: 'assets/icons/knowledge/javascript.svg',
+      alt: 'Ícone de conhecimento de JavaScript',
+      title: 'JavaScript'
     },
     {
       src: 'assets/icons/knowledge/sass.svg',
