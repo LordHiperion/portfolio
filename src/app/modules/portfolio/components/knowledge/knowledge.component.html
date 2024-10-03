@@ -1,7 +1,7 @@
 <div class="container">
   <h2>Conhecimentos</h2>
   <ul>
-    @for (item of arrayKnowledge(); track item) {
+    @for (item of arrayKnowledge(); track item;) {
       <li [matTooltip]="item.title">
         <img
         [src]="item.src"
@@ -9,7 +9,7 @@
         loading="lazy"
         width="22px"
         height="24px"
-        />
+        >
       </li>
     }
   </ul>
